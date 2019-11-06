@@ -1,0 +1,16 @@
+<h1>List des appartements disponibles</h1>
+
+<div class="container">
+<% @flats.each do |flat| %>
+<div class="card-product">
+  <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+    <div class="card-product-infos">
+        <h2> <%= flat.address %></h2>
+        <h3>Un appartement pour <strong><%= flat.number_of_guests%></strong> only.</h3>
+        <div class ="prix">
+            <p><strong><%= flat.price_per_night%>€</strong> only</p>
+        </div>
+    </div>
+    </div>
+    <% end %>
+    </div>
